@@ -6,7 +6,7 @@
 
 
 
-{% hint style="success" %}
+{% hint style="info" %}
 how to sync with github？
 
 Drafts --&gt; Merge
