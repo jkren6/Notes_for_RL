@@ -1,4 +1,7 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Rich's Slogan](README.md)
+* [Keywords](keywords/README.md)
+  * [Experience Replay Buffers](keywords/experience-replay-buffers.md)
+  * [Softmax Policy](keywords/softmax-policy.md)
 
