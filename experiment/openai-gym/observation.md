@@ -76,3 +76,5 @@ Episode finished after 14 timesteps
 
 [Experiment Video](http://s3-us-west-2.amazonaws.com/rl-gym-doc/cartpole-yes-reset.mp4)
 
+> **However, good general-purpose agents don't need to know the semantics of the observations: they can learn how to map observations to actions to maximize reward without any prior knowledge.**
+
