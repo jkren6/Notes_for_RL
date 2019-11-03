@@ -9,7 +9,8 @@
 ## Experiment
 
 * [OpenAI Gym](experiment/openai-gym/README.md)
-  * [Observations](experiment/openai-gym/open-source-interface-to-reinforcement-learning-tasks..md)
+  * [Space](experiment/openai-gym/space.md)
+  * [Observations](experiment/openai-gym/observation.md)
 
 ## Python & IDE
 
