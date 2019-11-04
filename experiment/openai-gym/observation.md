@@ -35,7 +35,7 @@ for _ in range(1000):
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-The process gets started by calling `reset()`, which returns an initial `observation`. So a more proper way of writing the previous code would be to respect the `done` flag:
+**The process gets started by calling `reset()`, which returns an initial `observation`**. So a more proper way of writing the previous code would be to respect the `done` flag:
 
 {% code-tabs %}
 {% code-tabs-item title="Now" %}

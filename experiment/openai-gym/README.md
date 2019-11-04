@@ -41,4 +41,6 @@ for _ in range(1000):
 
 
 > [A brief introduction video in madarian.](https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/4-4-gym/)
+>
+> [A bried introduction in Zhihu.](https://zhuanlan.zhihu.com/p/40673328)
 
