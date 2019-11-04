@@ -11,6 +11,7 @@
 * [OpenAI Gym](experiment/openai-gym/README.md)
   * [Observations](experiment/openai-gym/observation.md)
   * [Space](experiment/openai-gym/space.md)
+  * [Wrapper & Monitor](experiment/openai-gym/wrapper-and-monitor.md)
   * [技术总结《OpenAI Gym》](experiment/openai-gym/ji-shu-zong-jie-openai-gym.md)
 
 ## Python & IDE
