@@ -9,7 +9,6 @@
 ## Experiment
 
 * [OpenAI Gym](experiment/openai-gym/README.md)
-  * [Zhihu page](experiment/openai-gym/zhihu-page.md)
   * [Space](experiment/openai-gym/space.md)
   * [Observations](experiment/openai-gym/observation.md)
 
