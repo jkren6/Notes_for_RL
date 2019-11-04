@@ -29,6 +29,18 @@ while True:
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
+可见，关键的函数有：
+
+* `env = gym.make('CartPole-v0')`
+* `env.reset()`
+* `env.step(a)`
+
+\*\*\*
+
+
+
+
+
 ```
 $ give me super-powers
 ```
