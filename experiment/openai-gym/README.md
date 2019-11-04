@@ -45,4 +45,6 @@ for _ in range(1000):
 > [A bried introduction in Zhihu.](https://zhuanlan.zhihu.com/p/40673328)
 >
 > [A good introduction in Blog](https://www.meltycriss.com/2018/03/26/tech-gym/)
+>
+> [A detail introduction in Zhihu.](https://zhuanlan.zhihu.com/p/43109742)
 
