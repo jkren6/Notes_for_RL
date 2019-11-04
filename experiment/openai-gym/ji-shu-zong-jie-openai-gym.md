@@ -35,7 +35,7 @@ while True:
 * `env.reset()`
 * `env.step(a)`
 
-\*\*\*
+***
 
 
 
