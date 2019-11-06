@@ -10,6 +10,14 @@ This note is copied from [Zhihu](https://zhuanlan.zhihu.com/p/54784178).
 
 简化起见，设 ![\[&#x516C;&#x5F0F;\]](https://www.zhihu.com/equation?tex=%5Cmathcal+S%3D%5C%7Bs_1%2Cs_2%2Cs_3%5C%7D) ，参数 ![\[&#x516C;&#x5F0F;\]](https://www.zhihu.com/equation?tex=%5Cmathbf%7Bw%7D%3D%28w_1%2Cw_2%29%5ET) ，此时 value function ![\[&#x516C;&#x5F0F;\]](https://www.zhihu.com/equation?tex=%5Bv%28s_1%29%2Cv%28s_2%29%2Cv%28s_3%29%5D%5ET) 可看作一个三维空间中的点。而参数 ![\[&#x516C;&#x5F0F;\]](https://www.zhihu.com/equation?tex=%5Cmathbf%7Bw%7D) 则能够通过一个二维子空间提供一个替代的坐标系，其线性组合而成的逼近函数 ![\[&#x516C;&#x5F0F;\]](https://www.zhihu.com/equation?tex=v_%7B%5Cmathbf%7Bw%7D%7D) 显然也在这个子空间内。
 
+下图是一个状态空间的示例，一些具体的含义会逐渐通过后续的小节来解释。
+
+![The geometry of linear value-function approximation.](../.gitbook/assets/jie-ping-20191105-xia-wu-9.59.16.png)
+
+
+
+
+
 
 
 
