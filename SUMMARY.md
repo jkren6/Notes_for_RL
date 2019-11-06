@@ -4,6 +4,7 @@
 * [Keywords](keywords/README.md)
   * [Softmax Policy](keywords/softmax-policy.md)
   * [Experience Replay Buffers](keywords/experience-replay-buffers.md)
+  * [Linear Value-function Geometry](keywords/linear-value-function-geometry.md)
 * [Existing problems in Coursera RL course](existing-problems.md)
 
 ## Experiment
