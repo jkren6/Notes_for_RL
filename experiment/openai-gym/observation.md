@@ -18,8 +18,8 @@ An implementation of the classic “agent-environment loop”. Each timestep, th
 
 ![](../../.gitbook/assets/aeloop-138c89d44114492fd02822303e6b4b07213010bb14ca5856d2d49d6b62d88e53.svg)
 
-{% code-tabs %}
-{% code-tabs-item title="Previous" %}
+{% tabs %}
+{% tab title="Previous" %}
 ```python
 import gym
 env = gym.make("CartPole-v1")
@@ -32,13 +32,13 @@ for _ in range(1000):
   if done:
     observation
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 **The process gets started by calling `reset()`, which returns an initial `observation`**. So a more proper way of writing the previous code would be to respect the `done` flag:
 
-{% code-tabs %}
-{% code-tabs-item title="Now" %}
+{% tabs %}
+{% tab title="Now" %}
 ```python
 import gym
 env = gym.make('CartPole-v0')
@@ -54,11 +54,11 @@ for i_episode in range(20):
             break
 env.close()
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
-{% code-tabs %}
-{% code-tabs-item title="Output:" %}
+{% tabs %}
+{% tab title="Output:" %}
 ```python
 [-0.061586   -0.75893141  0.05793238  1.15547541]
 [-0.07676463 -0.95475889  0.08104189  1.46574644]
@@ -71,8 +71,8 @@ Episode finished after 14 timesteps
 [-0.02779488 -0.19091794 -0.03971191  0.26388759]
 [-0.03161324  0.00474768 -0.03443415 -0.04105167]
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 [Experiment Video](http://s3-us-west-2.amazonaws.com/rl-gym-doc/cartpole-yes-reset.mp4)
 

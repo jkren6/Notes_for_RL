@@ -10,8 +10,8 @@ description: >-
 
 一般来说，使用Gym的代码如下：
 
-{% code-tabs %}
-{% code-tabs-item title="main.py" %}
+{% tabs %}
+{% tab title="main.py" %}
 ```python
 # main.py
 import gym
@@ -26,8 +26,8 @@ while True:
     if done:
         break
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 可见，关键的函数有：
 
@@ -41,8 +41,8 @@ $ give me super-powers
 
 #### 我们先关注`env.reset()`和`env.step(a)`。这两个函数是超类`Env`的成员函数，`Env`的相关代码如下：
 
-{% code-tabs %}
-{% code-tabs-item title="gym/core.py" %}
+{% tabs %}
+{% tab title="gym/core.py" %}
 ```python
 # gym/core.py
 class Env(object):
@@ -57,13 +57,13 @@ class Env(object):
         return self._reset()
     ...
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 可以看到这两个函数依赖于子类的`_reset(self)`和`_step(self, action)`实现，子类`CartPoleEnv`的相关代码如下：
 
-{% code-tabs %}
-{% code-tabs-item title="gym/envs/classic\_control/CartPole.py" %}
+{% tabs %}
+{% tab title="gym/envs/classic\_control/CartPole.py" %}
 ```python
 # gym/envs/classic_control/CartPole.py
 class CartPoleEnv(gym.Env):
@@ -74,15 +74,15 @@ class CartPoleEnv(gym.Env):
         ...
     ...
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 综上，`env.reset()`和`env.step(a)`实际上是调用子类的`_reset(self)`和`_step(self, action)`。
 
 #### 下面我们关注`gym.make('CartPole-v0')`，它的实现如下：
 
-{% code-tabs %}
-{% code-tabs-item title="registration.py" %}
+{% tabs %}
+{% tab title="registration.py" %}
 ```python
 # gym/envs/registration.py
 # Have a global registry
@@ -92,13 +92,13 @@ def make(id):
     return registry.make(id)
 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 可以看到`gym.make`依赖于类`EnvRegistry`的成员函数`make`，`EnvRegistry`的相关代码如下：
 
-{% code-tabs %}
-{% code-tabs-item title="registration.py" %}
+{% tabs %}
+{% tab title="registration.py" %}
 ```python
 # gym/envs/registration.py
 class EnvRegistry(object):
@@ -120,13 +120,13 @@ class EnvRegistry(object):
         ...
     ...
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 可见类`EnvRegistry`的成员函数`make`依赖于类`EnvSpec`的成员函数`make`，`EnvSpec`的相关代码如下：
 
-{% code-tabs %}
-{% code-tabs-item title="registration.py" %}
+{% tabs %}
+{% tab title="registration.py" %}
 ```python
 # gym/envs/registration.py
 def load(name):
@@ -156,8 +156,8 @@ class EnvSpec(object):
         return env
     ...
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 > 至此，我们对Gym的核心函数调用链有了一个基本的了解：
 >

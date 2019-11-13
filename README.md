@@ -25,6 +25,10 @@
 
 
 
+gitbook对数学公式不是很友好，但是代码高亮不错，决定以后在数学公式方面侧重于用印象笔记记录，部分代码方面有gitbook记录。
+
+
+
 how to sync with github？
 
 {% hint style="info" %}
