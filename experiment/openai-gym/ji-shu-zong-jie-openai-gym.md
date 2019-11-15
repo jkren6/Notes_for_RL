@@ -10,8 +10,7 @@ description: >-
 
 一般来说，使用Gym的代码如下：
 
-{% tabs %}
-{% tab title="main.py" %}
+{% code title="main.py" %}
 ```python
 # main.py
 import gym
@@ -26,8 +25,7 @@ while True:
     if done:
         break
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 可见，关键的函数有：
 
@@ -41,8 +39,7 @@ $ give me super-powers
 
 #### 我们先关注`env.reset()`和`env.step(a)`。这两个函数是超类`Env`的成员函数，`Env`的相关代码如下：
 
-{% tabs %}
-{% tab title="gym/core.py" %}
+{% code title="gym/core.py" %}
 ```python
 # gym/core.py
 class Env(object):
@@ -57,13 +54,11 @@ class Env(object):
         return self._reset()
     ...
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 可以看到这两个函数依赖于子类的`_reset(self)`和`_step(self, action)`实现，子类`CartPoleEnv`的相关代码如下：
 
-{% tabs %}
-{% tab title="gym/envs/classic\_control/CartPole.py" %}
+{% code title="gym/envs/classic\_control/CartPole.py" %}
 ```python
 # gym/envs/classic_control/CartPole.py
 class CartPoleEnv(gym.Env):
@@ -74,15 +69,13 @@ class CartPoleEnv(gym.Env):
         ...
     ...
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 综上，`env.reset()`和`env.step(a)`实际上是调用子类的`_reset(self)`和`_step(self, action)`。
 
 #### 下面我们关注`gym.make('CartPole-v0')`，它的实现如下：
 
-{% tabs %}
-{% tab title="registration.py" %}
+{% code title="registration.py" %}
 ```python
 # gym/envs/registration.py
 # Have a global registry
@@ -92,13 +85,11 @@ def make(id):
     return registry.make(id)
 
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 可以看到`gym.make`依赖于类`EnvRegistry`的成员函数`make`，`EnvRegistry`的相关代码如下：
 
-{% tabs %}
-{% tab title="registration.py" %}
+{% code title="registration.py" %}
 ```python
 # gym/envs/registration.py
 class EnvRegistry(object):
@@ -120,13 +111,11 @@ class EnvRegistry(object):
         ...
     ...
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 可见类`EnvRegistry`的成员函数`make`依赖于类`EnvSpec`的成员函数`make`，`EnvSpec`的相关代码如下：
 
-{% tabs %}
-{% tab title="registration.py" %}
+{% code title="registration.py" %}
 ```python
 # gym/envs/registration.py
 def load(name):
@@ -156,8 +145,7 @@ class EnvSpec(object):
         return env
     ...
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 > 至此，我们对Gym的核心函数调用链有了一个基本的了解：
 >
