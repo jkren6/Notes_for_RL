@@ -29,7 +29,7 @@ gitbook对数学公式不是很友好，但是代码高亮不错，决定以后�
 
 聊了很多今晚。
 
-
+Dyna  with FA
 
 how to sync with github？
 
